@@ -1,0 +1,9 @@
+| Cor              | Hex       | Uso                          |
+| ---------------- | --------- | ---------------------------- |
+| 🔴 Vermelho vivo | #D92B2B | "Di" e detalhes vermelhos   |
+| 🟢 Verde gourmet | #1E8C45 | "Gourmet" e bandeira        |
+| ⚪ Branco        | #F5F5F5 | "Sabore" e texto inferior   |
+| ⚫ Preto grafite | #1F1F1F | Fundo                       |
+| ⚫ Cinza escuro  | #343434 | Textura do fundo            |
+| ⚪ Cinza claro   | #CFCFCF | Sombras e detalhes do texto |
+| ⚫ Preto profundo| #111111 | Sombras e contraste         | 

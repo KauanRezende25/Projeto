@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*
+{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body
+{
+    background-color: #f5f5f5;
+    color: #212121;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.main
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 140vh;
+    width: 100%;
+}
+.total
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.forms
+{
+    gap: 4rem;
+}
+
+.botao
+{
+    background-color: #C0392B;
+    border: none;
+    width: 25rem;
+    height: 3rem;
+    color: #f3f3f3;
+}
+.botao:hover
+{
+    cursor: pointer;
+    background-color: #d34030;
+}
+
+.input
+{
+    width: 25rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border: solid #212121 1px;
+    padding-left: 15px;
+    
+}
+
+.inputs
+{
+    gap: 5rem;
+    margin-top: -2rem;
+}
+
+.senhas
+{
+    display: flex;
+    justify-content: baseline;
+}
+
+.olho
+{
+    color: #212121;
+    background-color: #fff;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: .8rem;
+    font-size: 1.3rem;
+    border: solid #212121 1px;
+    border-left: none;
+}
+
+.olho:hover
+{
+    color: #646464;
+    cursor: pointer;
+}
+.senha
+{
+    width: 23rem;
+    border-right: none;
+}
+.logo
+{
+    height: 40vh;
+    width: 20vw;
+    margin-top: -8rem;
+}
+.linha
+{
+    height: .1rem;
+    width: 10.85rem;
+    background-color: #212121;
+    margin-bottom: 1rem;
+}
+.centralizarlinha
+{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cadastro
+{
+    display: flex;
+    align-items: baseline;
+    justify-content: start;
+    gap: .5rem;
+    width: 25rem;
+    margin-bottom: 2rem;
+    margin-top: -3rem;
+    font-size: .9rem;
+}
+.esqueciSenha
+{
+    display: flex;
+    justify-content: start;
+    width: 25rem;
+    margin-top: .7rem;
+    margin-bottom: -.5rem;
+    gap: .5rem;
+    font-size: .9rem;
+}
+.google
+{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.entrarGoogle
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    height: 3rem;
+    border: solid 1px #212121;
+    padding-left: 1rem;
+    width: 25rem;
+}
+.entrarGoogle:hover
+{
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+.termos
+{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: .5rem;
+    margin-top: 1rem;
+    width: 25rem;
+}
+
+.checkbox-container {
+  display: inline-block;
+  position: relative;
+  padding-left: 25px; 
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.3rem;
+  width: 1.3rem;
+  background-color: #eee;
+  border: 2px solid #212121;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+.checkbox-container:hover input ~ .checkmark {
+  background-color: #ddd;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #C0392B;
+  border-color: #C0392B;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-container .checkmark:after {
+  left: 4px;
+  top: 2px;
+  width: 8px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
