@@ -1,0 +1,12 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.cabecalho
+{
+    background-color: #D92B2B;
+    width: 100vw;
+    height: 5rem;
+}
