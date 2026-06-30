@@ -1,12 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Homenaje&display=swap');
 *
 {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+:root
+{
+    --vermelho:#D92B2B;
+    --verde:#1E8C45;
+    --preto: #343434;
+    --branco: #F5F5F5;
+}
 .cabecalho
 {
-    background-color: #D92B2B;
+    background: linear-gradient(to right, var(--verde) 50%,  var(--vermelho) 50%);
     width: 100vw;
-    height: 5rem;
+    height: 6rem;
+    color: var(--preto);
+    font-family: 'Homenaje',sans-serif;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+}
+.logo
+{
+    width: 9rem;
+    height: 9rem;
+    padding: -200%;
+}
+.image
+{
+    margin-top: 1rem;
+    padding-bottom: -2rem;
+}
+.cabecalhoTotal
+{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+.carrinhoElements
+{
+    display: flex;
+    align-items: center;
+}
+.carrinho
+{
+    background-color: var(--vermelho);
+    border: none;
+    font-size: 1rem;
+
+}
+.qntCarrinho
+{
+    background-color: var(--preto);
+    color: var(--branco);
+    border-radius: 100%;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bi-cart4
+{
+    font-size: 2.1rem;
+}
+.cabecalhoInfos
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 80vw;
+    gap: 1rem;
+    margin-right: 2rem;
+    height: 10vh;
+    margin-top: -2rem;
+}
+.buttonsobrenos
+{
+    background: none;
+    border: none;
+}
+.buttonsobrenos:hover
+{
+    color:#222222;
+    transition: 200ms;
+}
+.abrirLoja
+{
+    width: 7rem;
+    height: 2.5rem;
+    border-radius: 1rem;
+    border: solid 1px var(--preto);
+}
+.aberto
+{
+    background-color: var(--verde);
+}
+.fechado
+{
+    background-color: var(--vermelho);
+}
+/* Esconde o botão hambúrguer por padrão no computador */
+.botao-hamburguer {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--branco);
+    font-size: 2.5rem; /* Deixa o ícone grande e bonito */
+    cursor: pointer;
+}
+@media (max-width: 1450px)
+{
+    .cabecalhoInfos
+    {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 60vw;
+        gap: 1rem;
+        margin-right: 2rem;
+        height: 10vh;
+        margin-top: -2rem;
+    }
+}
+
+@media (max-width: 750px) 
+{
+    .cabecalho 
+    {
+        height: auto !important; 
+        background: #D92B2B;
+        padding: 1rem 1.5rem !important;
+        width: 100vw;
+    }
+
+    .cabecalhoTotal 
+    {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
+        height: auto !important;
+        gap: 1.5rem !important;
+        background: none !important;
+    }
+
+    /* Nova classe para alinhar a logo e o ícone perfeitamente em linha */
+    .barra-topo 
+    {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important; /* Alinha o hambúrguer verticalmente pelo meio da logo */
+        width: 100% !important;
+    }
+
+    .image 
+    {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .logo 
+    {
+        width: 11rem !important; /* Tamanho calibrado para não estourar no mobile */
+        height: auto !important;
+        display: block;
+    }
+
+    .botao-hamburguer 
+    {
+        display: block !important;
+        font-size: 2.5rem !important;
+        background: none !important;
+        border: none !important;
+        color: var(--branco) !important;
+        cursor: pointer;
+        padding: 0 !important;
+        margin: 0 !important;
+        line-height: 1 !important; /* Remove folgas verticais do botão */
+    }
+
+    .statusLoja
+    {
+        display: flex !important;
+        justify-content: center !important;
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    /* MENU DE LINKS: Começa totalmente oculto */
+    .cabecalhoInfos 
+    {
+        display: none !important; 
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
+        height: auto !important;
+        margin: 0 !important;
+        gap: 1.5rem !important;
+        background: none !important;
+    }
+
+    /* Quando ativo, ele entra na fila do flexbox abaixo do botão 'Aberto' sem encavalar */
+    .cabecalhoInfos.ativo 
+    {
+        display: flex !important; 
+    }
+
+    .buttonsobrenos 
+    {
+        color: var(--branco) !important;
+        font-size: 1.6rem !important;
+        background: none !important;
+        border: none !important;
+    }
+
+    /* Estilo para a palavra ou ícone do Carrinho no menu mobile */
+    .carrinhoElements 
+    {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        color: var(--branco) !important;
+        font-size: 1.6rem !important;
+    }
+
+    .carrinho 
+    {
+        color: var(--branco) !important;
+        font-size: 1.6rem !important;
+        background: none !important;
+        border: none !important;
+    }
+
+    /* Some com a bolinha do zero que estava quebrando o layout */
+    .qntCarrinho 
+    {
+        display: none !important;
+    }
 }
