@@ -7,14 +7,15 @@
 }
 :root
 {
-    --vermelho:#D92B2B;
-    --verde:#1E8C45;
+    --vermelho:#FF261F;
+    --verde:#5BD15B;
     --preto: #343434;
     --branco: #F5F5F5;
 }
 .cabecalho
 {
-    background: linear-gradient(to right, var(--verde) 50%,  var(--vermelho) 50%);
+    /*background: linear-gradient(to right, var(--verde) 50%,  var(--vermelho) 50%);*/
+    background: none;
     width: 100vw;
     height: 6rem;
     color: var(--preto);
@@ -22,17 +23,18 @@
     font-size: 1.3rem;
     display: flex;
     align-items: center;
+    overflow-x: hidden;
 }
 .logo
 {
-    width: 9rem;
-    height: 9rem;
-    padding: -200%;
+    width: 10rem;
+    height: auto;
 }
 .image
 {
-    margin-top: 1rem;
+    margin-top: 3rem;
     padding-bottom: -2rem;
+
 }
 .cabecalhoTotal
 {
@@ -48,25 +50,24 @@
 }
 .carrinho
 {
-    background-color: var(--vermelho);
     border: none;
-    font-size: 1rem;
-
+    background: none;
 }
 .qntCarrinho
 {
     background-color: var(--preto);
-    color: var(--branco);
+    color:var(--branco);
     border-radius: 100%;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.1rem;
+    height: 1.1rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: .85rem;
 }
 .bi-cart4
 {
-    font-size: 2.1rem;
+    font-size: 1.5rem;
 }
 .cabecalhoInfos
 {
@@ -93,12 +94,15 @@
 {
     width: 7rem;
     height: 2.5rem;
-    border-radius: 1rem;
-    border: solid 1px var(--preto);
+    border-radius: 1.5rem;
+    border: none;
+    background-color: transparent;
+    color: var(--preto);
+
 }
 .aberto
 {
-    background-color: var(--verde);
+    background-color: #54FF54;
 }
 .fechado
 {
@@ -109,9 +113,14 @@
     display: none;
     background: none;
     border: none;
-    color: var(--branco);
+    color:var(--preto);
     font-size: 2.5rem; /* Deixa o ícone grande e bonito */
     cursor: pointer;
+}
+.botaoabrirlogo
+{
+    display: flex;
+    align-items: center;
 }
 @media (max-width: 1450px)
 {
@@ -127,121 +136,142 @@
         margin-top: -2rem;
     }
 }
-
 @media (max-width: 750px) 
 {
     .cabecalho 
     {
-        height: auto !important; 
-        background: #D92B2B;
-        padding: 1rem 1.5rem !important;
+        height: auto; 
+        background: none;
+        padding: 1rem 1.5rem;
         width: 100vw;
     }
 
     .cabecalhoTotal 
     {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        width: 100% !important;
-        height: auto !important;
-        gap: 1.5rem !important;
-        background: none !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        gap: 1.5rem;
+        background: none;
     }
 
     /* Nova classe para alinhar a logo e o ícone perfeitamente em linha */
     .barra-topo 
     {
-        display: flex !important;
-        flex-direction: row !important;
-        justify-content: space-between !important;
-        align-items: center !important; /* Alinha o hambúrguer verticalmente pelo meio da logo */
-        width: 100% !important;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; /* Alinha o hambúrguer verticalmente pelo meio da logo */
+        width: 100%;
     }
 
     .image 
     {
-        margin: 0 !important;
-        padding: 0 !important;
+        margin: 0;
+        padding: 0;
     }
 
     .logo 
     {
-        width: 11rem !important; /* Tamanho calibrado para não estourar no mobile */
-        height: auto !important;
+        width: 11rem; /* Tamanho calibrado para não estourar no mobile */
+        height: auto;
         display: block;
     }
 
     .botao-hamburguer 
     {
-        display: block !important;
-        font-size: 2.5rem !important;
-        background: none !important;
-        border: none !important;
-        color: var(--branco) !important;
+        display: block;
+        font-size: 2.5rem;
+        background: none;
+        border: none;
+        color:var(--preto);
         cursor: pointer;
-        padding: 0 !important;
-        margin: 0 !important;
-        line-height: 1 !important; /* Remove folgas verticais do botão */
+        padding: 0;
+        margin: 0;
+        line-height: 1; /* Remove folgas verticais do botão */
     }
 
     .statusLoja
     {
-        display: flex !important;
-        justify-content: center !important;
-        width: 100% !important;
-        margin: 0 !important;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
     }
 
     /* MENU DE LINKS: Começa totalmente oculto */
     .cabecalhoInfos 
     {
-        display: none !important; 
-        flex-direction: column !important;
-        align-items: center !important;
-        justify-content: center !important;
-        width: 100% !important;
-        height: auto !important;
-        margin: 0 !important;
-        gap: 1.5rem !important;
-        background: none !important;
+        display: none; 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        gap: 1.5rem;
+        background: none;
     }
 
     /* Quando ativo, ele entra na fila do flexbox abaixo do botão 'Aberto' sem encavalar */
     .cabecalhoInfos.ativo 
     {
-        display: flex !important; 
+        display: flex; 
     }
 
     .buttonsobrenos 
     {
-        color: var(--branco) !important;
-        font-size: 1.6rem !important;
-        background: none !important;
-        border: none !important;
+        color:var(--preto);
+        font-size: 1.6rem;
+        background: none;
+        border: none;
     }
 
     /* Estilo para a palavra ou ícone do Carrinho no menu mobile */
     .carrinhoElements 
     {
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-        color: var(--branco) !important;
-        font-size: 1.6rem !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:var(--preto);
+        font-size: 1.6rem;
     }
 
     .carrinho 
     {
-        color: var(--branco) !important;
-        font-size: 1.6rem !important;
-        background: none !important;
-        border: none !important;
+        color:var(--preto);
+        font-size: 1.6rem;
+        background: none;
+        border: none;
     }
 
     /* Some com a bolinha do zero que estava quebrando o layout */
     .qntCarrinho 
     {
-        display: none !important;
+        display: none;
+    }
+}
+@media (max-width: 370px)
+{
+    .logo
+    {
+        width: 5rem;
+    }
+    .image
+    {
+        height: auto;
+        width: 9rem;
+    }
+    .aberto
+    {
+        width: 4rem;
+        margin-left: .3rem;
+    }
+    .fechado
+    {
+        width: 4rem;
+        margin-left: .3rem;
     }
 }
