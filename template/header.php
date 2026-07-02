@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="<?php echo BASE;?>styles/header.css">
 
 </head>
 <body>
@@ -16,7 +16,7 @@
             <div class="barra-topo">
                 <div class="botaoabrirlogo">
                     <div class="image">
-                        <img class="logo" alt="logo" src="../image/logo.png">
+                        <img class="logo" alt="logo" src="<?php echo BASE;?>image/logo.png">
                     </div>
                     <div class="statusLoja">
                         <button type="button" id='aberto' class='abrirLoja aberto'>Aberto</button>
@@ -42,6 +42,6 @@
 
         </div>
     </header>
-    <script src="../js/cabecalho.js"></script>
+    <script src="<?php echo BASE;?>js/cabecalho.js"></script>
 </body>
 </html>
