@@ -11,11 +11,14 @@
 </head>
 
 <body>
+    <?php
+        include_once("./link.php");
+    ?>
     <main class="main">
         <div class="total">
             <img class="logo" src="../image/logo.png" alt="logo">
             <div class="cadastro">
-                <p>Não tem uma conta?</p> <a href="../view/cadastro.html">Cadastre-se aqui</a>
+                <p>Não tem uma conta?</p> <a href="../view/cadastro.php">Cadastre-se aqui</a>
             </div>
             <form class="forms" action="" method="post">
                 <div class="inputs">
@@ -43,8 +46,8 @@
             
         </div>
     </main>
-    <script src="/js/login.js"></script>
+    <script src="../js/login.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-     <?php include '../template/footer.html'?>
+     <?php include_once(ROOT_PATH . "template/footer.php")?>
 </body>
 </html>

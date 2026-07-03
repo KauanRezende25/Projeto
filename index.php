@@ -11,11 +11,6 @@
 </head>
 <body>
     <?php
-        if($_SERVER['HTTP_HOST']=='localhost')
-            define('BASE', 'http://localhost/Projeto/');
-        else
-            define('BASE', 'http://' . $_SERVER['HTTP_HOST']. '/');
-        
         include_once('./template/header.php');
         include_once('./template/util.php');
     ?>

@@ -6,17 +6,20 @@
     <link rel="icon" type="image/png" href="/image/logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/styles/cadastro.css">
+    <link rel="stylesheet" href="../styles/cadastro.css">
     <title>Cadastro</title>
 </head>
 
 <body>
+    <?php
+        include_once("./link.php");
+    ?>
     <main class="main">
         <div class="total">
-            <img class="logo" src="/image/logo.png" alt="logo">
+            <img class="logo" src="../image/logo.png" alt="logo">
             <form class="forms" action="" method="post">
                 <div class="cadastro">
-                    <p>Já tem uma conta?</p><a href="/view/login.html">Fazer login</a>
+                    <p>Já tem uma conta?</p><a href="../view/login.php">Fazer login</a>
                 </div>
                 <div class="inputs">
                     <input class="input" type="text" name="nome" id="nome" placeholder="Nome" required> <br>
@@ -47,13 +50,14 @@
                     <div class="linha"></div>
                 </div>
                 <button class="entrarGoogle">
-                    <img src="/image/google.png" alt="google" class="google" >
+                    <img src="../image/google.png" alt="google" class="google" >
                     Entrar com o Google
                 </button>
             </form>        
         </div>
     </main>
-    <script src="/js/login.js"></script>
+    <script src="../js/login.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <?php include_once(ROOT_PATH . "template/footer.php")?>
 </body>
 </html>
