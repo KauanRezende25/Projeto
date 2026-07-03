@@ -11,6 +11,7 @@
 </head>
 <body>
     <?php
+        include_once('./view/link.php');
         include_once('./template/header.php');
         include_once('./template/util.php');
     ?>
