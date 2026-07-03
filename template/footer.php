@@ -27,7 +27,7 @@
             </div>
         </div>
         <div class="footer-info">
-            <div class="contato">
+            <div class="contatoFoot">
                 <h1> Contato </h1>
                 <div class="iconsContato"> 
                     <a href="https://wa.me/5522992549393">
