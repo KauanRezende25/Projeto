@@ -1,4 +1,11 @@
-.footer{
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.footer
+{
     background: #D92B2B;
     color: #fff;
     padding: 22px 8%;
@@ -6,13 +13,15 @@
 }
 
 .footer-container{
-    display: flex;
-    gap: 60px;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    column-gap: 5rem;
 }
-
-.footer-logo img{
-    width: 300px;
+.logo_footer
+{
+    height: auto;
+    width: 30vw;
 }
 
 .footer-info{
@@ -39,4 +48,32 @@
 
 .iconsContato a{
     color: #fff;
+}
+@media (max-width: 1070px)
+{
+    .footer-container
+    {
+        column-gap: 2rem;
+    }
+}
+@media (max-width: 900px)
+{
+    .footer-container
+    {
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 1rem;
+        padding-bottom: 1rem;
+    }
+    .logo_footer
+    {
+        height: 10rem;
+        width: auto; 
+    }
+    .iconsContato
+    {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 1rem;
+        margin-top: 1rem;
+    }
 }

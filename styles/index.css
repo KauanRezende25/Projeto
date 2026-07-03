@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Homenaje&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root
+{
+    --vermelho:#FF261F;
+    --verde:#5BD15B;
+    --preto: #343434;
+    --branco: #F5F5F5;
+}
+
+.opcoescardapio
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    row-gap: 3rem;
+    margin-bottom: 2rem;
+}
+.categoriacardapio
+{
+    display: flex;
+    justify-content: center;
+    align-items: s;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+.titulocardapio
+{
+    color: var(--vermelho);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    width: 19%;
+    display: flex;
+    justify-content: end; /*FAZER O CONTRARIO PFF PARA DE SER BURRO E FAZ ALGO Q FUNCIONE:)*/
+
+}

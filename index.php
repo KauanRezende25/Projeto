@@ -18,6 +18,22 @@
         
         include_once('./template/header.php');
         include_once('./template/util.php');
+    ?>
+    <div class="cardapiocategoria">
+        <h1 class="titulocardapio">PROMOÇÕES</h1>
+        <div class="opcoescardapio">
+            <?php
+                include('./template/opcao.php');
+                include('./template/opcao.php');
+                include('./template/opcao.php');
+                include('./template/opcao.php');
+                include('./template/opcao.php');
+                include('./template/opcao.php');
+            ?>
+        </div>
+    </div>
+
+    <?php
         include_once('./template/footer.php');
     ?>
    

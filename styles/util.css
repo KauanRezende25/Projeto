@@ -18,7 +18,7 @@ body
 }
 .cabecalho
 {
-    background: linear-gradient(to right, var(--verde) 50%,  var(--vermelho) 50%);
+    background: linear-gradient(to right, var(--verde) 50%,  var(--vermelho) 50%) !important;
     overflow-y: hidden;
 }
 .utilTotal
@@ -95,6 +95,10 @@ body
     {
         margin-top: -5rem;
     }
+    .cetralutil
+    {
+       	height: 13rem;
+    }
 
 }
 @media(max-width: 510px)
@@ -107,6 +111,10 @@ body
     {
         margin-top: -10rem;
     }
+    .cetralutil
+    {
+       	height: 10rem;
+    }
 }
 @media(max-width: 400px)
 {
@@ -114,8 +122,12 @@ body
     {
         font-size: 1.5rem;
     }
+    .cetralutil
+    {
+       	height: 9rem;
+    }
     .divimagemutil
     {
-        margin-top: -18rem;
+        margin-top: -12rem;
     }
 }

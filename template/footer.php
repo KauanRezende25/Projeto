@@ -13,7 +13,7 @@
    <footer class="footer">
     <div class="footer-container">
         <div class="footer-logo">
-            <img src="<?php echo BASE;?>image/logo.png">
+            <img src="<?php echo BASE;?>image/logo.png" class='logo_footer'>
         </div>
 
         <div class="footer-info">
@@ -25,6 +25,8 @@
                 Bairro: Santa Teresa, CEP: 28460-000, Miracema/Rio de Janeiro
                 </p>
             </div>
+        </div>
+        <div class="footer-info">
             <div class="contato">
                 <h1> Contato </h1>
                 <div class="iconsContato"> 
@@ -41,7 +43,6 @@
                     Instagram
                     </a>
                 </div>
-
             </div>
         </div>
 

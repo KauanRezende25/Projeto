@@ -1,0 +1,36 @@
+:root
+{
+    --vermelho:#FF261F;
+    --verde:#5BD15B;
+    --preto: #343434;
+    --branco: #F5F5F5;
+}
+.opcao
+{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+}
+.tituloopcao
+{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.descricaoproduto
+{
+    height: auto;
+    width: 20rem;
+}
+.botaoescolher
+{
+    background-color: var(--verde);
+    height: 2rem;
+    border: none;
+    border-radius: 15px;
+    color: var(--branco);
+    width: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
