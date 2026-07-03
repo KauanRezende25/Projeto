@@ -17,17 +17,19 @@
 {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    place-items: center;
+    place-items: end;
     row-gap: 3rem;
     margin-bottom: 2rem;
+    column-gap: 50%;
 }
-.categoriacardapio
+.cardapiocategoria
 {
-    display: flex;
-    justify-content: center;
-    align-items: s;
-    flex-direction: column;
-    margin-bottom: 2rem;
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    width: 80vw;
+    justify-self: center;
+    align-self: center;
+    place-items: start;
 }
 .titulocardapio
 {
@@ -36,8 +38,62 @@
     font-weight: bold;
     margin-bottom: 2rem;
     margin-top: 2rem;
-    width: 19%;
-    display: flex;
-    justify-content: end; /*FAZER O CONTRARIO PFF PARA DE SER BURRO E FAZ ALGO Q FUNCIONE:)*/
+}
+
+@media (max-width: 1300px)
+{
+    .opcoescardapio
+    {
+        column-gap: 35%;
+    }
+}
+@media (max-width: 1100px)
+{
+    .opcoescardapio
+    {
+        column-gap: 25%;
+    }
+}
+@media (max-width: 970px)
+{
+    .opcoescardapio
+    {
+        column-gap: 15%;
+    }
+}
+@media (max-width: 850px)
+{
+    .opcoescardapio
+    {
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 60%;
+    }
+}
+@media (max-width: 700px)
+{
+    .opcoescardapio
+    {
+        column-gap: 40%;
+    }
+}
+@media (max-width: 600px)
+{
+    .opcoescardapio
+    {
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 20%;
+    }
+}
+@media (max-width: 520px)
+{
+    .opcoescardapio
+    {
+        grid-template-columns: repeat(1,1fr);
+        column-gap: 0%;
+    }
+    .cardapiocategoria
+    {
+        place-items: center;
+    }
 
 }

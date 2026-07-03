@@ -20,7 +20,7 @@
 .descricaoproduto
 {
     height: auto;
-    width: 20rem;
+    width: 11rem;
 }
 .botaoescolher
 {
@@ -33,4 +33,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.imagemopcao
+{
+    width:auto;
+    height: 8rem;
+    border-radius: 10px;
+}
+.centralimagemopcao
+{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
