@@ -9,7 +9,7 @@
     <div class="opcao">
         <h3 class="tituloopcao">Nome do Produto</h3>
         <div class="centralimagemopcao">
-            <img src="<?php echo BASE;?>image/pizza-portuguesa.webp" alt="" class="imagemopcao">
+            <img src="<?php echo BASE;?>image/pizza-portuguesa.jpg" alt="" class="imagemopcao">
         </div>
         <p class="descricaoproduto">Descrição do produto babadeiro</p>
         <button type="button" class="botaoescolher">Adicionar ao carrinho</button>
