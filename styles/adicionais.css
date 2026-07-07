@@ -1,0 +1,27 @@
+.box-add {
+    margin-top: 2.3rem;
+    display: flex;
+    align-items: center;
+    background-color: #5BD15B;
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 2.3rem;
+}
+
+.box-add i {
+    font-size: 1rem;
+    margin-left: 2.3rem;
+}
+
+.box-add h3 {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.box-opcoesAdd {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+

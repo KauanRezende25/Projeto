@@ -1,0 +1,26 @@
+
+.box-voltar {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    margin-top: 2.3rem;
+    margin-bottom: 2.3rem;
+}
+
+
+.box-voltar i {
+    font-size: 2rem;
+    margin-left: 2.3rem;
+}
+
+.box-voltar p {
+    margin: 0;
+}
+
+.info-prod{
+    display: flex;
+    justify-content: center;
+}
